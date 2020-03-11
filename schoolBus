@@ -1,26 +1,17 @@
-School = []
+myList = list()
 
-class Name():
-  def __init__(self, title):
-    self.title = title
+n = int(input("Enter number of students on the bus: "))
 
-class Seat():
-  def __init__(self, number):
-    self.number = number
-
-class Student():
+for i in range(0, n):
   
-  def __init__(self, name, seat):
-    self.name = input("What is their name?\n")
-    self.seat = input("What is their seat number?\n")
-    School[seat.number] = name.title
-addStudent = input("Type 1 if you would like to add a student to the bus and 0 otherwise\n")
-addStudent = int(addStudent)
-if(addStudent > 0):
-  name1 = ""
-  seat2 = 0
-  Student(name1, seat2)
-  
-else:
-  check = input("Which seat would you like to check?\n")
-  School[check]
+  myList.append(input("input student name\n"))
+
+print(myList)
+
+editStudent = input("Type 1 if you would like to edit a students name and 0 otherwise\n")
+editStudent = int(editStudent)
+if(editStudent > 0):
+  x = input("Which seat number would you like to change (starting at seat 0)? \n")
+  x = int(x)
+  myList[x] = input("New name? \n") 
+  print(myList)
