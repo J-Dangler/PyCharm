@@ -1,10 +1,10 @@
-myList = list()
+schoolBus = list()
 
 n = int(input("Enter number of students on the bus: "))
 
 for i in range(0, n):
   
-  myList.append(input("input student name\n"))
+  schoolBus.append(input("input student name\n"))
 
 print(myList)
 
@@ -13,5 +13,5 @@ editStudent = int(editStudent)
 if(editStudent > 0):
   x = input("Which seat number would you like to change (starting at seat 0)? \n")
   x = int(x)
-  myList[x] = input("New name? \n") 
-  print(myList)
+  schoolBus[x] = input("New name? \n") 
+  print(schoolBus)
